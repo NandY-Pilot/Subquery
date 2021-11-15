@@ -1,6 +1,8 @@
 #Output Result
 https://imgur.com/ge7qsUT
 
+
+
 git clone https://github.com/subquery/tutorials-account-balances.git
 cd tutorials-account-balances
 yarn
@@ -8,3 +10,15 @@ yarn codegen
 yarn build
 docker-compose pull & docker-compose up
 
+#Open Web Browser
+ http://127.0.0.1:3000/
+
+#Put Code in Entity and run
+query {
+   accounts(first:10 orderBy:BALANCE_DESC){
+    nodes{
+      account
+      balance
+    }
+  }
+}
