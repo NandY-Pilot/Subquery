@@ -1,0 +1,10 @@
+#Output Result
+https://imgur.com/ge7qsUT
+
+git clone https://github.com/subquery/tutorials-account-balances.git
+cd tutorials-account-balances
+yarn
+yarn codegen
+yarn build
+docker-compose pull & docker-compose up
+
