@@ -1,4 +1,4 @@
-#Final Result
+#Output Result
 https://imgur.com/a/epZR1Fb
 
 
@@ -10,3 +10,14 @@ yarn codegen
 yarn build
 docker-compose pull & docker-compose up
 
+#Open Web Browser
+ http://127.0.0.1:3000/
+ 
+#Put Code in Entity and run
+ query{
+  starterEntities(last:5, orderBy:BLOCK_HEIGHT_ASC){
+    nodes{
+      blockHeight
+    }
+  }
+}
